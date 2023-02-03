@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+  <title>The Simon Game</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <div id="welcomeScreen">
+    <span class="welcomeText">The Simon Game</span>
+  </div>
+  <div id="gameScreen">
+    <h1 id="level-title">Press A Key to Start</h1>
+  <div class="container">
+    <div class="row">
+
+      <div type="button" id="green" class="btn green">
+
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+
+  </div>
+  <div id="overlay"></div>
+  <div id="popup">
+    <h2>Instructions</h2><span id="closeBtn" class="material-symbols-outlined ">
+      close
+      </span>
+    <ol>
+      <li>Every time a color block will flash once.</li>
+      <li>You have to click the color blocks after that.</li>
+      <li>As you level up, you need to remember the whole sequence of flashes occured till now.</li>
+      <li>Click on the blocks in the same sequence to proceed to next level.</li>
+      <li>Click a wrong color in a sequence and you lose.</li>
+    </ol>
+  </div>
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

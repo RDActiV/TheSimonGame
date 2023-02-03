@@ -1,0 +1,149 @@
+body {
+  text-align: center;
+  
+  position: relative;
+  margin: 0;
+  padding: 0;
+  
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: #ff595e;
+}
+
+.green {
+  background-color: #8ac926;
+}
+
+.blue {
+  background-color: #1982c4;
+}
+
+.yellow {
+  background-color: #ffca3a;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+#welcomeScreen{
+  position: absolute;
+  background: #f1e3d3;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  
+  
+}
+#gameScreen{
+  position: absolute;
+  top: 0;
+  background-color: #6a4c93;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+.welcomeText{
+  display: block;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 5rem;
+  margin-top: 22%;
+  color: #0b3954;
+}
+#help{
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+#help>span{
+  font-size: 40px;
+  border: 2px solid;
+  border-radius: 25px;
+  background: #FEF2BF;
+  transition: 0.5s;
+}
+#help>span:hover{
+  background: #8ac926;
+  transform: scale(1.1);
+  color: #6a4c93;
+}
+#popup{
+  font-family: 'Montserrat';
+  top: 30%;
+  left: 26%;
+  height: 40%;
+  width: 40%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f1e3d3;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px ;
+
+  
+}
+ol{
+  border-radius: 10px;
+  background: #d8c0fa;
+  height: 70%;
+  width: 90%;
+  font-size: 20px;
+  text-align: left;
+  margin: 0 0 10px 10px;
+  line-height: 40px;
+  
+  
+}
+#overlay{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  background: black;
+  opacity: 0.3;
+}
+#closeBtn{
+  border:2px solid;
+  border-radius: 20px;
+  padding: 5px;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+#closeBtn:hover{
+  background: #ff595e;
+  color: ;
+}
